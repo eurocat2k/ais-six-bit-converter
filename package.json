@@ -1,0 +1,11 @@
+{
+  "name": "jsbitarray",
+  "version": "1.0.18",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "G.Zelenak <gzelenak36@gmail.com>",
+  "license": "MIT"
+}
