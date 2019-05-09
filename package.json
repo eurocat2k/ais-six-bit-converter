@@ -1,11 +1,15 @@
 {
-  "name": "jsbitarray",
-  "version": "1.0.18",
+  "name": "i5nconv",
+  "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": ["AIS", "Asterix", "CAT062", "FPL callsign", "six bit encoding", "ICAO" ],
   "author": "G.Zelenak <gzelenak36@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "jsbitarray": "file: ./lib/index.js"
+  }
 }
