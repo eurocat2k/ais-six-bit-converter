@@ -1,15 +1,25 @@
 {
   "name": "i5nconv",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.13",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["AIS", "Asterix", "CAT062", "FPL callsign", "six bit encoding", "ICAO" ],
+  "keywords": [
+    "AIS",
+    "Asterix",
+    "CAT062",
+    "FPL callsign",
+    "six bit encoding",
+    "ICAO"
+  ],
   "author": "G.Zelenak <gzelenak36@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "jsbitarray": "file: ./lib/index.js"
-  }
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "description": "Convert AIS 6 bit characters encoded string - ICAO/ADEXP FPL callsign or ident - from 6 bits encoding to ASCII, and from ASCII to 6 bits encodings."
 }
