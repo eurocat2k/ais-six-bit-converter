@@ -20,7 +20,7 @@
     'use strict';
     const CHAR_BITS_6 = 6;
     const CHAR_BITS_8 = 8;
-    const BitArray = require('jsbitarray');
+    const BitArray = require('./lib/bitarray');
     const maxBits   = CHAR_BITS_6;
     const maxLen    = CHAR_BITS_8;
     const atCode    = '@'.charCodeAt(0);
