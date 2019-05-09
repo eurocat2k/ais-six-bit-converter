@@ -19,8 +19,8 @@ const data = [
 const conv = new I5NConvert();
 
 for (let i = 0, len = data.length; i < len; i += 1) {
-    var res = conv.I5N_to_Ascii(data[i]);
-    var octets = conv.Ascii_to_I5N(res).map((x) => { return "0x" + "0".repeat(2 - (x & 0x3f).toString(16).length) +  (x & 0x3f).toString(16)});
+    var res = conv.I5N_ASCII(data[i]);
+    var octets = conv.ASCII_I5N(res).map((x) => { return "0x" + "0".repeat(2 - (x & 0x3f).toString(16).length) +  (x & 0x3f).toString(16)});
     console.log({result: res, output: octets});
 }
 ```
@@ -39,5 +39,5 @@ Has two public attributes:
 
 has further three public prototype methods:
 - **showTable** which simply displays the contents of the 6 bits char table
-- **I5N_to_Ascii** which then converts array of bytes - 6 bytes for callsign encoded 6 bits string - to ASCII charaters string
-- **ASCII_to_I5N** which then encodes maximum 8 bytes length callsign string into a 6 bytes long 6 bits encoded string.
+- **I5N_ASCII** which then converts array of bytes - 6 bytes for callsign encoded 6 bits string - to ASCII charaters string
+- **ASCII_I5N** which then encodes maximum 8 bytes length callsign string into a 6 bytes long 6 bits encoded string.
